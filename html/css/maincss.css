@@ -32,6 +32,12 @@
     text-align: left;
 }
 
+.layoutmain table tr td p
+{
+    font-size:12px;
+    color:#808080;
+}
+
 .layoutmain table tr td input
 {
     width:350px;

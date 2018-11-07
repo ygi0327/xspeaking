@@ -1,7 +1,7 @@
 <html>
   <meta charset="utf-8">
    <link rel="stylesheet" href="../css/maincss.css">
-   <link rel="javascript" href="../js/mainjs.js">
+   <script type="text/javascript" src="../js/mainjs.js"></script>
     <header>
     </header>
     <body>
@@ -21,7 +21,7 @@
                   아이디 
                   </td>
                   <td>
-                    : <input type="text" placeholder="email">
+                    : <input type="text" id="mainid" placeholder="email" style="width:280px;"><input type="submit" value="중복확인" style="width:70px;vertical-align: middle;">
                   </td>
                 </tr>
                 <tr>
@@ -29,23 +29,29 @@
                   비밀번호 
                   </td>
                   <td>
-                    : <input type="password" placeholder="password">
+                    : <input type="password" placeholder="password" id="firstp" maxlength="16"  onKeyDown="checklength();">
                   </td>
                 </tr>
+                <script type="text/javascript">
+                  document.write('<tr><td></td><td><p> ※ 비밀번호8~16자리 <span id="warning"></span></p></td></tr>');
+                </script>
                 <tr>
                   <td>
                   비밀번호 확인 
                   </td>
                   <td>
-                    : <input type="password" placeholder="re-password">
+                    : <input type="password" placeholder="re-password" id="secondp" maxlength="16" onclick="checklength();" onKeyDown="checkpass();">
                   </td>
                 </tr>
+                <script type="text/javascript">
+                  document.write('<tr><td></td><td><p id="cheakp"></p></td></tr>');
+                </script>
                 <tr>
                   <td>
                   성명 
                   </td>
                   <td>
-                    : <input type="text" placeholder="name">
+                    : <input type="text" placeholder="name" onclick="checkpass();">
                   </td>
                 </tr>
                 <tr>
@@ -107,14 +113,14 @@
                     : <SELECT id="month">
                     <OPTION value="010">010</OPTION> 
                     <OPTION value="011">011</OPTION>
-                  </SELECT>-<input type="text" numberOnly style="width:100px; height:19px;">-<input type="text" numberOnly style="width:100px; height:19px;">
+                  </SELECT>-<input type="text" type="number" style="width:40px; height:19px;" maxlength="4">-<input type="text" type="number" style="width:40px; height:19px;" maxlength="4">
                   </td>
                 </tr>
               </table>
               <hr style="border:2px solid #c4c5c7; margin-top:40px; margin-bottom:20px;">
               <center>
-              <input type="button" onClick="location.href='../main.html'" value="취소" style="width:120px;padding-top:5px;padding-bottom:5px;"> 
-              <input type="button" onClick="location.href='../main.html'" value="확인" style="width:120px;padding-top:5px;padding-bottom:5px;">
+              <input type="button" onClick="location.href='../main.html'" value="취소" style="width:120px;padding-top:5px;padding-bottom:5px; background: #2684ff; border: 1px solid #0052cc; font-size:16px;"> 
+              <input type="button" onClick="passkey();" value="확인" style="width:120px;padding-top:5px;padding-bottom:5px; background: #2684ff; border: 1px solid #0052cc; font-size:16px;">
               </center>
             </form>
             </div>
