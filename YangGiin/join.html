@@ -1,26 +1,40 @@
 <html>
     <head>
 
+            <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
-        <div>
-            <img src= "media/mainlogoicon.ico" >
+        <div class="layer">
+                <a href="login.html">
+                        <img  src= "media/mainlogoicon.ico" height="150px">
+                    </a>
             <div>
                 <form>
-                    <fieldset>
-                        <legend><h2>회원가입</h2></legend>
-                        <input type ="text" placeholder="이름"> <br>
-                        <input type ="email" placeholder="이메일"> <input type ="button" value="중복확인"> <br>
-                        <input type ="password" placeholder="비밀번호"> <br>
-                        <input type ="password" placeholder="비밀번호 확인"> <br>
-                        <input type ="text" placeholder="닉네임"> <input type ="button" value="중복확인"> <br>
-                        연락처 <br> 
+                    <fieldset class="box">
+                        <h2 style="margin:10px; font-size: 25px">회원가입</h2>
+                        <div>
+                        <input class="text_box" type ="text" placeholder="이름"> <br>
+                        <input class="text_box" type ="email" placeholder="이메일"> <input type ="button" value="중복확인"> <br>
+                        <input class="text_box" type ="password" placeholder="비밀번호"> <br>
+                        <input class="text_box" type ="password" placeholder="비밀번호 확인"> <br>
+                        <input class="text_box" type ="text" placeholder="닉네임"> <input type ="button" value="중복확인"> <br>
+                        </div>
+                        <fieldset class="box"> 
+                            <legend>연락처</legend>
                         SKT<input type="radio" name="phone" value="1">   KT<input type="radio" name="phone" value="2">   LG U+<input type="radio" name="phone" value="3"> <br>
-                        <input type ="text"> - <input type ="text"> - <input type ="text"> <br>
-                        생일 <br>
-                        <input type="date"> <br>
-                        <input type="submit" value="회원가입 신청">  <input type="reset" value="다시입력">
+                        <input type ="text" class="phone_number"> - 
+                        <input type ="text" class="phone_number"> - 
+                        <input type ="text" class="phone_number"> <br>
                     </fieldset>
+                        생일 <br>
+                        <input class="text_box" type="date"> <br>
+                        제3자 약관 동의 <input type="checkbox"> <br> </fieldset>
+                        <br>
+                        <center>
+                        <input class="join_button" type="button" value="회원가입" onclick="location.href='login.html'"  style="background :white">
+                        <input class="join_button" type="reset" value="새로 입력" style="background :white"> <br>
+                   </center>
                 </form>
             </div>
         </div>

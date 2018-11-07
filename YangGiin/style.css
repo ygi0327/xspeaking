@@ -1,0 +1,54 @@
+.layer{
+    position:absolute;
+    top:400px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 500px;
+  }
+  .phone_number {
+      width: 50px;
+      border-radius: 5px;
+  }
+  .tt{
+      float: left;
+      width: 50%;
+  }
+  .login_button {
+      width : 200px;
+      height: 100px;
+      border: 0;
+      background-color: antiquewhite;
+      border-radius: 10px;
+  }
+  .login_but {
+    border: 0;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  .text_box {
+      border-radius: 5px;
+      height: 30px;
+      margin-bottom: 5px;
+      border: 0;
+      padding: 10px;
+      border-left: 100px;
+  }
+  .box {
+    border-radius: 10px;
+    background-color: rgba( 255, 255, 255, 0.3 );
+    border: 0;
+    font-size: 13px
+  }
+  .join_button {
+      height: 50px;
+      width: 100px;
+      border: 0;
+      background-color: antiquewhite;
+      border-radius: 10px;
+  }
+  body {
+      background-image: url('media/123.jpg');
+      border: 0;
+  }
+  
