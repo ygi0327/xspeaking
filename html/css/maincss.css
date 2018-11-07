@@ -1,0 +1,39 @@
+.containerin
+{
+    
+    padding-top:50px;
+    width:100%;
+}
+
+.container2
+{
+    margin: 0 auto 0px;
+    width:500px;
+    border: 2px solid #c4c5c7;
+    padding:10px;
+}
+
+.cont2
+{
+    width:500px;
+    border-bottom: 4px solid #c4c5c7;
+}
+
+.layoutmain{
+    width:500px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.layoutmain table tr td
+{
+    font-weight: bold;
+    padding: 6px 0;
+    text-align: left;
+}
+
+.layoutmain table tr td input
+{
+    width:350px;
+    height:28px;
+}

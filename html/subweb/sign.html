@@ -1,0 +1,124 @@
+<html>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="../css/maincss.css">
+   <link rel="javascript" href="../js/mainjs.js">
+    <header>
+    </header>
+    <body>
+            <div class="containerin">
+            <div class="container2">
+              <div class="cont2">
+              
+              <img src="../img/logo.png" alt="logo" width="280" height="42" style="">
+              <span style="font-size:45;">회원가입</span>
+             
+              </div>
+            <div class = "layoutmain">
+            <form>
+              <table>
+                <tr>
+                  <td>
+                  아이디 
+                  </td>
+                  <td>
+                    : <input type="text" placeholder="email">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  비밀번호 
+                  </td>
+                  <td>
+                    : <input type="password" placeholder="password">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  비밀번호 확인 
+                  </td>
+                  <td>
+                    : <input type="password" placeholder="re-password">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  성명 
+                  </td>
+                  <td>
+                    : <input type="text" placeholder="name">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  생년월일
+                  </td>
+                  <td>
+                    :
+                    <SELECT id="month">
+                        <script type="text/javascript">
+                          for(b = 2018; b>1900; b--){
+                          document.write("<OPTION value="+b+">"+b+"</OPTION>");
+                          }
+                          </script>
+                        </SELECT>년    
+                    <SELECT id="month">
+                        <script type="text/javascript">
+                          for(b = 1; b<=12; b++){
+                          document.write("<OPTION value="+b+">"+b+"</OPTION>");
+                          }
+                          </script>
+                        </SELECT>월 
+                        <input type="text" style="width:31px; height:19px;">일
+                            <script type="text/javascript">
+                            /* var mon=document.getElementById("month");
+                            var check=30;
+                            function movemon(){
+                              for(b = 1; b<=check; b++){
+                              document.write("<OPTION VALUE="+b+">"+b+"</OPTION>");
+                              }
+                            }
+                            function hello(){
+                              var dd= mon.options[mon.selectedIndex].value;
+                              if(dd==1||dd==3||dd==5||dd==7||dd==8||dd==10||dd==12)//31일인 월
+                                check=31;
+                              if(dd==4||dd==6||dd==9||dd==11)//30일인 월
+                                check=30;
+                              if(dd==2)//2월
+                              check=29;
+                              movemon();
+                            }
+                            movemon();*/
+                              </script>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  주소 
+                  </td>
+                  <td>
+                    : <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  전화번호
+                  </td>
+                  <td>
+                    : <SELECT id="month">
+                    <OPTION value="010">010</OPTION> 
+                    <OPTION value="011">011</OPTION>
+                  </SELECT>-<input type="text" numberOnly style="width:100px; height:19px;">-<input type="text" numberOnly style="width:100px; height:19px;">
+                  </td>
+                </tr>
+              </table>
+              <hr style="border:2px solid #c4c5c7; margin-top:40px; margin-bottom:20px;">
+              <center>
+              <input type="button" onClick="location.href='../main.html'" value="취소" style="width:120px;padding-top:5px;padding-bottom:5px;"> 
+              <input type="button" onClick="location.href='../main.html'" value="확인" style="width:120px;padding-top:5px;padding-bottom:5px;">
+              </center>
+            </form>
+            </div>
+            </div>
+          </div>
+    </body>
+</html>
