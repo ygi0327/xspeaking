@@ -1,0 +1,113 @@
+<html>
+    <meta charset="utf-8">
+          <header>
+              <link href="dist/bootstrap.css" rel="stylesheet">
+              <link href="/dist/floating-labels.css">
+              <style>
+                  table{border:1px solid black; width:100%; background: white; margin:auto;}
+                  th{border:1px solid black; text-align: center;}
+                  td{border:1px solid black; text-align: center;}
+            </style>
+          </header>
+          <body style="display:flex; background:black;">
+                <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+                        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">source tree</a>
+                        <div class="input-group" style="width:25%; color:white!important; text-align: m">
+                                <p style="font-size:20px; margin:auto;  ">XXX님 로그인</p>
+                                <div class="input-group-append">
+                                  <button type="button" class="btn btn-secondary">로그아웃</button>
+                                </div>
+                            </div>
+                      </nav>
+                      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                            <div class="sidebar-sticky">
+                              <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                    Dashboard 
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                                    모든 반
+                                  </a>
+                                  <ul style="margin-left:10px;">
+                                    <a class="nav-link" href="#" style="padding:0;">
+                                      <li>
+                                                    아침 반
+                                      </li>
+                                    </a>
+                                    <a class="nav-link" href="#" style="padding:0;">
+                                        <li>
+                                                    점심 반
+                                        </li>
+                                    </a>
+                                    <a class="nav-link" href="#" style="padding:0;">
+                                        <li>
+                                                    저녁 반
+                                        </li>
+                                    </a>
+                                  </ul>
+                                </li><h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                                        
+                                        <a class="d-flex align-items-center text-muted" href="#">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                          <span>파일 추가</span>
+                                        </a>
+                                      </h6>
+                              </ul> 
+                            </div>
+                          </nav>
+                        <div style="margin-top:50px; margin-left:10px; margin-right:10px; margin-bottom:10px;background:gray; width:100%;">
+                                <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm" style="background:white; margin:0 !important;">
+                                        <div class="input-group-append" style="margin-left:10px;">
+                                                <button type="button" class="btn btn-secondary"><input type="checkbox"> 전체선택</button>
+                                        </div>    
+                                        <div class="input-group-append" style="margin-left:10px;">
+                                                <button type="button" class="btn btn-secondary">추가</button>
+                                        </div>
+                                        <div class="input-group-append" style="margin-left:10px;">
+                                                <button type="button" class="btn btn-secondary">수정</button>
+                                        </div>
+                                        <div class="input-group-append" style="margin-left:10px;">
+                                                <button type="button" class="btn btn-secondary">삭제</button>
+                                        </div>
+                                </div>
+
+                                <table>
+                                    <tr>
+                                        <th>
+                                            선택
+                                        </th>
+                                        <th>
+                                             id
+                                        </th>
+                                        <th>
+                                             이름
+                                        </th>
+                                        <th>
+                                             등록일
+                                        </th>
+                                        <th>
+                                             
+                                        </th>
+                                    </tr>
+                                    <script type="text/javascript">
+                                        for(b = 1; b<=30; b++){
+                                            document.write("<tr>");
+                                                for(a=1; a<6; a++){
+                                                    if(a>4)
+                                                    document.write('<td><div class="input-group-append" style="margin-left:10px;"><button type="button" class="btn btn-secondary">삭제</button></div></td>');
+                                                    else
+                                                    document.write("<td>-</td>");
+                                                }
+                                                document.write("</tr>");
+                                        }
+                                        </script>
+                                    
+                                </table>
+                        </div>
+          </body>
+      </html>

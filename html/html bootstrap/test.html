@@ -1,0 +1,75 @@
+<html>
+    <meta charset="utf-8">
+          <header>
+              <link href="dist/bootstrap.css" rel="stylesheet">
+              <link href="/dist/floating-labels.css">
+          </header>
+          <body style="display:flex;">
+              <div class="container2" style="margin:auto; width: 500px; border: 2px solid #c4c5c7; padding: 10px; ">
+                  <form class="form-signin">
+                      <div class="text-center mb-4">
+                        <img class="mb-4" src="img/logo.png" alt="" width="480" height="70">
+                        <h1 class="h3 mb-3 font-weight-normal">회원가입</h1>
+                      </div>
+                      <div class="form-label-group">
+                        <label for="inputEmail" style="margin:5 0 0px;">이메일</label>
+                        <div class="input-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                                <div class="input-group-append">
+                                  <button type="submit" class="btn btn-secondary">중복확인</button>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="form-label-group">
+                        <label for="inputPassword"style="margin:5 0 0px;">비밀번호</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                      </div>
+                      <div class="form-label-group">
+                            <label for="inputPassword"style="margin:5 0 0px;">비밀번호 확인</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Re_Password" required="">
+                      </div>
+                      <div class="form-label-group">
+                            <label for="inputPassword"style="margin:5 0 0px;">이름</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="name" required="">
+                      </div>
+                      <div class="form-label-group">
+                            <label for="inputPassword"style="margin:5 0 0px;">생년월일</label>
+                            <div class="row" style="font-size:12px;">
+                                    <div class="col-md-5 mb-3">
+                                      <label for="country"style="margin:5 0 0px;">년도</label>
+                                      <select class="custom-select d-block w-100" id="country" required="">
+                                            <script type="text/javascript">
+                                                for(b = 2018; b>1900; b--){
+                                                document.write("<OPTION value="+b+">"+b+"</OPTION>");
+                                                }
+                                                </script>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                      <label for="state"style="margin:5 0 0px;">월</label>
+                                      <select class="custom-select d-block w-100" id="state" required="">
+                                            <script type="text/javascript">
+                                                for(b = 1; b<=12; b++){
+                                                document.write("<OPTION value="+b+">"+b+"</OPTION>");
+                                                }
+                                                </script>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                      <label for="zip"style="margin:5 0 0px;">일</label>
+                                      <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                    </div>
+                                  </div>
+                      </div>
+                      <div class="form-label-group">
+                            <label for="inputPassword"style="margin:5 0 0px;">주소</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="" required="">
+                      </div>
+                      <br>
+                      <button class="btn btn-lg btn-primary btn-block" type="submit">확인</button>
+                      <br>
+                    </form>
+              </div>
+              
+          </body>
+      </html>
